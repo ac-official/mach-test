@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.about-style-four ul li {
+    font-weight: 600;
+    color: #232323;
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+    padding-left: 40px;
+    margin-top: 15px;
+}
+ 
+
+.about-style-four ul li::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: "➤"; /* Left-pointed arrow */
+    font-family: "Font Awesome 5 Pro"; /* Ensure this matches your font setup */
+    font-size: 24px;
+    color: #104cba; /* Arrow color */
+    transform: translateY(-50%);
+}
+
+
+ 
