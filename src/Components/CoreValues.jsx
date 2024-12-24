@@ -1,7 +1,7 @@
 import React from 'react'
 import corebg from "../assets/business.jpg";
 const CoreValues = (
-    {data}
+    {data, pageType}
 ) => {
   return (
     <div>
@@ -39,7 +39,7 @@ const CoreValues = (
                   <div className="text-2xl text-[#104cba] mr-4">➤</div>
                   {/* Content */}
                   <div>
-                    <h3 className="text-2xl font-playfair font-bold mb-2">
+                    <h3 className={`${pageType==='service'?'text-xl':'text-2xl'} font-playfair font-bold mb-2`}>
                       {value.title}
                     </h3>
                      

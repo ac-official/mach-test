@@ -11,6 +11,7 @@ import Loader from "../Components/Loader";
 import MetaHelmet from "../Components/MetaData";
 import AboutSection from "../Components/AboutSection";
 import Specialities from "../Components/Specialities";
+import CoreValues from "../Components/CoreValues";
 
 const Services = () => {
   const { serviceId } = useParams();
@@ -86,7 +87,7 @@ const Services = () => {
 
       {data?.aboutUs && (
         <section className="bg-gray-100 py-24">
-          <AboutSection data={data} />
+          <AboutSection data={data} pageType={'service'} />
         </section>
       )}
 
@@ -168,12 +169,12 @@ const Services = () => {
 
       {data?.corevalueContent && (
         <section className="pb-24 bg-gray-100">
-          <CoreValues data={data} />
+          <CoreValues data={data} pageType={'service'} />
         </section>
       )}
 
       {data?.service?.gallery?.length > 0 && (
-        <section className="w-[85%] mx-auto pb-24">
+        <section className="w-[85%] mx-auto py-24">
           <p className="mb-16  mx-auto  text-4xl text-center  font-bold font-playfair">
             Our Gallery
           </p>
